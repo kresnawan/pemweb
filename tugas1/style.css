@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.wrap {
+    max-width: 640px;
+    padding: 0 34px;
+}
+
+.ket {
+    margin-top: 10px;
+}
+
+html {
+    /*font-family: "PT Sans", sans-serif;
+    font-weight: 400;*/
+    font-family: arno-pro, serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section-first {
+    padding-bottom: 24px;
+    border-bottom: 1px solid gray;
+}
+
+.section {
+    margin-top: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid gray;
+}
+
+.section-item {
+    margin-top: 24px;
+}
+
+.desc {
+    margin-top: 12px;
+}
