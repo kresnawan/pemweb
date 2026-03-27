@@ -1,4 +1,4 @@
-<table style="margin-top: 20px; border-collapse: collapse;">
+<table style="border-collapse: collapse;">
     <?php $columns = ["No", "Jenis Pengeluaran", "Nominal", "Tanggal"] ?>
     <tr>
         @foreach ($columns as $column)

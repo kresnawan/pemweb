@@ -1,11 +1,10 @@
-<x-layout title="Home">
+<x-layout title="Home" header="Semua data">
     <x-table>
         @foreach ($logs as $log)
             <tr>
-                <td style="padding: 5px 15px;">{{ $log->id }}</td>
-                <td style="padding: 5px 15px;">{{ $log->tipe }}</td>
-                <td style="padding: 5px 15px;">{{ $log->nominal }}</td>
-                <td style="padding: 5px 15px;">{{ $log->tanggal }}</td>
+                @foreach ($log as $item)
+                    <td style="padding: 5px 15px; border: 1px solid;">{{ $item }}</td>
+                @endforeach
             </tr>
         @endforeach
 
