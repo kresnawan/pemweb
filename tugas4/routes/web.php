@@ -14,3 +14,22 @@ Route::get("/", function () {
 Route::get("/tambah", function () {
     return view("tambah");
 });
+
+Route::post("/tambah", function () {
+    $tipe = request("tipe");
+    $nominal = request("nominal");
+
+    if (!isset($tipe) || !isset($nominal)) {
+        return redirect()->back()->with("result", "Data tidak boleh kosong!");
+    }
+
+    $res = DB::table("log_keuangan")->insert([
+        "tipe" => $tipe,
+        "nominal" => $nominal,
+    ]);
+    if ($res == true) {
+        return redirect("/");
+    } else {
+        return "Error";
+    }
+});
